@@ -1,0 +1,148 @@
+/* Tus estilos originales */
+body {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    margin: 0px;
+    padding: 0px;
+}
+
+#cabecera {
+    padding: 0px;
+    width: 100%;
+    max-height: 250px;
+    border: 0px;
+    margin: 0px;
+    display: block;
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icono {
+    width: 100px;
+    height: 100px;
+}
+
+#grupo {
+    width: 40%;
+    margin: auto;
+    border-style: none;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: black 2px 2px 2px;
+}
+
+.caja {
+    height: 25px;
+    font-family: tahoma;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lista {
+    height: 25px;
+    font-family: tahoma;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 93%;
+}
+
+/* Estilos agregados de tu amigo */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fondo blanco para que se lea bien sobre tu imagen */
+    padding: 10px;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background-color: #2c3e50;
+    color: white;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+    background-color: #f5f8ff;
+}
+
+tbody td {
+    padding: 11px 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+
+.btn-editar {
+    background-color: #f39c12;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-editar:hover {
+    background-color: #d68910;
+}
+
+.btn-certificado {
+    background-color: #27ae60;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-certificado:hover {
+    background-color: #1e8449;
+}
+
+.sin-registros {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-size: 15px;
+}
