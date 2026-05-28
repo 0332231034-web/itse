@@ -12,6 +12,12 @@
 
 <h1>Reporte de Funcionarios</h1>
 
+<?php if (isset($_GET['error']) && $_GET['error'] == 'duplicado'): ?>
+<div style="background:#e74c3c;color:white;padding:10px 20px;border-radius:6px;width:90%;margin:0 auto 10px auto;font-family:Arial;font-size:14px;">
+    ⚠ El funcionario ya existe. No se puede registrar duplicados.
+</div>
+<?php endif; ?>
+
 <div class="tabla-container">
     <a class="btn-insertar" href="nuevo-funcionario.php">Insertar Nuevo Funcionario</a>
     <br>
