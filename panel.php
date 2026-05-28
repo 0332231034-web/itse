@@ -5,100 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel - Empresas Registradas</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            padding: 30px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            font-size: 24px;
-        }
-
-        .tabla-container {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        thead tr {
-            background-color: #2c3e50;
-            color: white;
-        }
-
-        thead th {
-            padding: 12px 15px;
-            text-align: center;
-            font-size: 13px;
-            letter-spacing: 0.5px;
-        }
-
-        tbody tr {
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        tbody tr:hover {
-            background-color: #f5f8ff;
-        }
-
-        tbody td {
-            padding: 11px 15px;
-            text-align: center;
-            font-size: 13px;
-            color: #333;
-        }
-
-        .btn-editar {
-            background-color: #f39c12;
-            color: white;
-            padding: 6px 14px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .btn-editar:hover {
-            background-color: #d68910;
-        }
-
-        .btn-certificado {
-            background-color: #27ae60;
-            color: white;
-            padding: 6px 14px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .btn-certificado:hover {
-            background-color: #1e8449;
-        }
-
-        .sin-registros {
-            text-align: center;
-            padding: 30px;
-            color: #999;
-            font-size: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
@@ -128,9 +35,9 @@
                     LEFT JOIN certificado c ON e.idempresa = c.idempresa
                     ORDER BY e.idempresa DESC";
 
-            $resultado = mysqli_query($conn, $sql);
+            $resultado = mysqli_query($cn, $sql);
 
-            if (mysqli_num_rows($resultado) > 0) {
+            if (mysqli_num_rows($resultado) > 0) { //verifica si hay empresas registradas
                 while ($fila = mysqli_fetch_assoc($resultado)) {
                     $fechaEmision = $fila['fechaexpedicioncertificado'] 
                         ? date('d/m/Y', strtotime($fila['fechaexpedicioncertificado'])) 
