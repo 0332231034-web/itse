@@ -76,4 +76,5 @@ include("conexion.php");
 </div>
 
 </body>
+>>>>>>> cb0406f493028ea9303831df3091f17586768578
 </html>
