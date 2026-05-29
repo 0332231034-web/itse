@@ -1,0 +1,263 @@
+/* Tus estilos originales */
+body {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    margin: 0px;
+    padding: 0px;
+}
+
+#cabecera {
+    padding: 0px;
+    width: 100%;
+    max-height: 250px;
+    border: 0px;
+    margin: 0px;
+    display: block;
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icono {
+    width: 100px;
+    height: 100px;
+}
+
+#grupo {
+    width: 40%;
+    margin: auto;
+    border-style: none;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: black 2px 2px 2px;
+}
+
+.caja {
+    height: 25px;
+    font-family: tahoma;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lista {
+    height: 25px;
+    font-family: tahoma;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 93%;
+}
+
+/* Estilos agregados de tu amigo */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fondo blanco para que se lea bien sobre tu imagen */
+    padding: 10px;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background-color: #2c3e50;
+    color: white;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+    background-color: #f5f8ff;
+}
+
+tbody td {
+    padding: 11px 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+
+.btn-editar {
+    background-color: #f39c12;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btn-insertar {
+    background-color: #2471a3;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-editar:hover {
+    background-color: #d68910;
+}
+
+
+.btn-certificado {
+    background-color: #27ae60;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-certificado:hover {
+    background-color: #1e8449;
+}
+
+.sin-registros {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-size: 15px;
+}
+
+   /*ESTILOS EXCLUSIVOS PARA LA CABECERA*/
+
+.tabla-cabecera {
+    width: 100%;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Esta regla ANULA el brillo feo que heredaba de las otras tablas */
+.tabla-cabecera tr:hover, 
+.tabla-cabecera tbody tr:hover, 
+.tabla-cabecera td:hover {
+    background-color: transparent !important; 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white !important; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Prepara la animación suave */
+}
+
+/* El saltito elegante al pasar el mouse */
+.nav-link:hover {
+    transform: translateY(-5px); 
+}
+
+.nav-link img {
+    width: 70px; /* Tamaño del icono */
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+/*ESTILOS MINIMALISTAS PARA EL INDEX*/
+
+.form-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px 40px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra elegante */
+    border-top: 5px solid #2471a3; /* Línea azul superior */
+    text-align: left;
+}
+.tarjeta h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.caja-moderna, .lista-moderna {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f9fbfd;
+}
+.caja-moderna:focus, .lista-moderna:focus {
+    outline: none;
+    border-color: #2471a3;
+    background-color: #fff;
+}
+.btn-principal {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+.btn-principal:hover {
+    background-color: #1e8449;
+}
+
