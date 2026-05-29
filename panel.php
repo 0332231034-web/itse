@@ -55,7 +55,7 @@ include("conexion.php");
                     <td><?php echo $fila['nombregironegocio']; ?></td>
                     <td><?php echo $fechaEmision; ?></td>
                     <td>
-                        <a class="btn-editar" href="editar.php?id=<?php echo $fila['idempresa']; ?>">Editar</a>
+                        <a class="btn-editar" href="editar-empresa.php?id=<?php echo $fila['idempresa']; ?>">Editar</a>
                     </td>
                     <td>
                         <?php if ($fila['idcertificado']): ?>

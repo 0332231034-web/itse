@@ -29,29 +29,29 @@ $emp = mysqli_fetch_assoc($resultado);
             <div class="tarjeta">
                 <h2>Datos de la Empresa</h2>
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">RUC:</label>
+                <label class="label-moderno">RUC:</label>
                 <input type="text" name="txtruc" class="caja-moderna" value="<?php echo $emp['rucempresa']; ?>" maxlength="11" required>
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Razón Social:</label>
+                <label class="label-moderno">Razón Social:</label>
                 <input type="text" name="txtrazonsocial" class="caja-moderna" value="<?php echo $emp['razonsocialempresa']; ?>" required>
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Representante Legal:</label>
+                <label class="label-moderno">Representante Legal:</label>
                 <input type="text" name="txtrepresentante" class="caja-moderna" value="<?php echo $emp['representantelegalempresa']; ?>" required>
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Celular:</label>
+                <label class="label-moderno">Celular:</label>
                 <input type="text" name="txtcelular" class="caja-moderna" value="<?php echo $emp['celularempresa']; ?>">
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Correo:</label>
+                <label class="label-moderno">Correo:</label>
                 <input type="email" name="txtcorreo" class="caja-moderna" value="<?php echo $emp['correoempresa']; ?>">
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Dirección Fiscal:</label>
+                <label class="label-moderno">Dirección Fiscal:</label>
                 <input type="text" name="txtdireccion" class="caja-moderna" value="<?php echo $emp['direccionfiscalempresa']; ?>" required>
             </div>
 
             <div class="tarjeta">
                 <h2>Clasificación</h2>
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Distrito:</label>
+                <label class="label-moderno">Distrito:</label>
                 <select name="lstdistrito" class="lista-moderna" required>
                     <?php
                         $sqlD = "SELECT * FROM distrito ORDER BY nombredistrito ASC";
@@ -63,7 +63,7 @@ $emp = mysqli_fetch_assoc($resultado);
                     ?>
                 </select>
 
-                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Giro de Negocio:</label>
+                <label class="label-moderno">Giro de Negocio:</label>
                 <select name="lstgiro" class="lista-moderna" required>
                     <?php
                         $sqlG = "SELECT * FROM gironegocio ORDER BY nombregironegocio ASC";
@@ -76,8 +76,8 @@ $emp = mysqli_fetch_assoc($resultado);
                 </select>
             </div>
 
-            <input type="submit" value="Guardar Cambios" class="btn-principal" style="background-color:#f39c12;">
-            <a href="panel.php" class="btn-eliminar" style="padding:12px 30px;font-size:16px;margin-left:10px;display:inline-block;">Cancelar</a>
+            <input type="submit" value="Guardar Cambios" class="btn-principal btn-naranja">
+            <a href="panel.php" class="btn-eliminar btn-cancelar">Cancelar</a>
             <br><br><br>
         </form>
     </center>
