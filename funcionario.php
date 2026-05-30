@@ -33,7 +33,7 @@
         </thead>
         <tbody>
             <?php
-            $sql = "SELECT * FROM funcionario ORDER BY apellidosfuncionario ASC";
+            $sql = "SELECT * FROM funcionario ORDER BY idfuncionario ASC";
             $resultado = mysqli_query($cn, $sql);
             if (mysqli_num_rows($resultado) > 0) {
                 while ($fila = mysqli_fetch_assoc($resultado)) {

@@ -37,7 +37,7 @@ include("conexion.php");
                     FROM empresa e
                     INNER JOIN gironegocio g ON e.idgiro = g.idgiro
                     LEFT JOIN certificado c ON e.idempresa = c.idempresa
-                    ORDER BY e.idempresa DESC";
+                    ORDER BY e.razonsocialempresa ASC";
 
             $resultado = mysqli_query($cn, $sql);
 

@@ -31,7 +31,7 @@
         </thead>
         <tbody>
             <?php
-            $sql = "SELECT iddistrito, nombredistrito FROM distrito ORDER BY nombredistrito ASC";
+            $sql = "SELECT iddistrito, nombredistrito FROM distrito ORDER BY iddistrito ASC";
             $resultado = mysqli_query($cn, $sql);
             if (mysqli_num_rows($resultado) > 0) {
                 while ($fila = mysqli_fetch_assoc($resultado)) {

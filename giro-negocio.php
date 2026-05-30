@@ -33,7 +33,7 @@
         </thead>
         <tbody>
             <?php
-            $sql = "SELECT idgiro, nombregironegocio FROM gironegocio ORDER BY nombregironegocio ASC";
+            $sql = "SELECT idgiro, nombregironegocio FROM gironegocio ORDER BY idgiro asc";
             $resultado = mysqli_query($cn, $sql);
             if (mysqli_num_rows($resultado) > 0) {
                 while ($fila = mysqli_fetch_assoc($resultado)) {
