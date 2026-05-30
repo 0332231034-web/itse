@@ -18,6 +18,11 @@
     ⚠ El funcionario ya existe. No se puede registrar duplicados.
 </div>
 <?php endif; ?>
+<?php if (isset($_GET["error"]) && $_GET["error"] == "enuso"): ?>
+<div style="background:#e67e22;color:white;padding:10px 20px;border-radius:6px;width:90%;margin:0 auto 10px auto;font-family:Arial;font-size:14px;">
+    ⚠ No se puede eliminar este funcionario porque tiene certificados asociados.
+</div>
+<?php endif; ?>
 
 <div class="tabla-container">
     <a class="btn-insertar" href="nuevo-funcionario.php">Insertar Nuevo Funcionario</a>
@@ -34,7 +39,7 @@
         </thead>
         <tbody>
             <?php
-            $sql = "SELECT * FROM funcionario ORDER BY idfuncionario ASC";
+            $sql = "SELECT * FROM funcionario ORDER BY apellidosfuncionario ASC";
             $resultado = mysqli_query($cn, $sql);
             if (mysqli_num_rows($resultado) > 0) {
                 while ($fila = mysqli_fetch_assoc($resultado)) {

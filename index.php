@@ -80,7 +80,7 @@ include("conexion.php");
 
 <?php if (isset($_GET["error"]) && $_GET["error"] == "duplicado"): ?>
 <div style="background:#e74c3c;color:white;padding:10px 20px;border-radius:6px;width:90%;margin:0 auto 10px auto;font-size:14px;font-family:Arial;">
-    ⚠ Ya existe una empresa con ese RUC y esa dirección. Si es una sucursal, cambie la dirección.
+    ⚠ Ya existe una empresa con ese RUC, dirección y distrito. Para registrar una sucursal, cambie la dirección o el distrito.
 </div>
 <?php endif; ?>
 <form action="i-certificado.php" method="post">

@@ -12,7 +12,7 @@ $idgiro        = $_POST['lstgiro'];
 $idfuncionario = $_POST['lstfuncionario'];
 
 // Validar RUC + dirección duplicados
-$check = mysqli_query($cn, "SELECT idempresa FROM empresa WHERE rucempresa='$ruc' AND direccionfiscalempresa='$direccion'");
+$check = mysqli_query($cn, "SELECT idempresa FROM empresa WHERE rucempresa='$ruc' AND direccionfiscalempresa='$direccion' AND iddistrito='$iddistrito'");
 if (mysqli_num_rows($check) > 0) {
     header("location:index.php?error=duplicado");
     exit;

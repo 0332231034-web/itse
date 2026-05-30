@@ -18,12 +18,15 @@
     ⚠ El giro de negocio ya existe. No se puede registrar duplicados.
 </div>
 <?php endif; ?>
+<?php if (isset($_GET["error"]) && $_GET["error"] == "enuso"): ?>
+<div style="background:#e67e22;color:white;padding:10px 20px;border-radius:6px;width:90%;margin:0 auto 10px auto;font-family:Arial;font-size:14px;">
+    ⚠ No se puede eliminar este giro porque está asignado a una empresa registrada.
+</div>
+<?php endif; ?>
 
 <div class="tabla-container">
-    
-   <a class="btn-insertar" href="nuevo-giro.php">Insertar Nuevo Giro</a> 
-   
-    
+    <a class="btn-insertar" href="nuevo-giro.php">Insertar Nuevo Giro</a>
+    <br>
     <table>
         <thead>
             <tr>
@@ -34,7 +37,7 @@
         </thead>
         <tbody>
             <?php
-            $sql = "SELECT idgiro, nombregironegocio FROM gironegocio ORDER BY idgiro asc";
+            $sql = "SELECT idgiro, nombregironegocio FROM gironegocio ORDER BY nombregironegocio ASC";
             $resultado = mysqli_query($cn, $sql);
             if (mysqli_num_rows($resultado) > 0) {
                 while ($fila = mysqli_fetch_assoc($resultado)) {

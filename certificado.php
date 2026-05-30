@@ -30,7 +30,7 @@ $sql = "SELECT
         INNER JOIN funcionario f ON c.idfuncionario = f.idfuncionario
         WHERE c.idcertificado = '$id'";
 
-$resultado = mysqli_query($cn, $sql);   
+$resultado = mysqli_query($cn, $sql);
 $r = mysqli_fetch_assoc($resultado);
 
 if (!$r) { die("Certificado no encontrado."); }
@@ -56,17 +56,8 @@ function fila($pdf, &$y, $col1, $w1, $col2, $w2, $label, $valor) {
 
 $pdf = new FPDF('P', 'mm', 'A4');
 $pdf->AddPage();
-
-//img de fondo
-
-$pdf->Image('img/fondocertificado.png', 0, 0, 210, 297);
-
-
 $pdf->SetMargins(20, 20, 20);
 $pdf->SetAutoPageBreak(false);
-
-
-
 
 // Encabezado
 $pdf->SetFillColor(44, 62, 80);

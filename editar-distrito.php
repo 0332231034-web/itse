@@ -18,18 +18,17 @@ $nombreActual = $fila['nombredistrito'];
 </head>
 <body background="img/fondo.png">
 <br><br>
-<div class="form-wrapper wrapper-40">
+<div class="form-wrapper" style="width:40%;">
     <center>
         <form action="i-editardistrito.php" method="post">
             <div class="tarjeta">
                 <h2>Editar Distrito</h2>
                 <input type="hidden" name="txtid" value="<?php echo $id; ?>">
-                
-                <label class="label-moderno">Nombre del Distrito:</label>
+                <label style="font-weight:bold;color:#555;display:block;margin-bottom:5px;">Nombre del Distrito:</label>
                 <input type="text" name="txtnombre" class="caja-moderna" autocomplete="off" value="<?php echo $nombreActual; ?>" required>
             </div>
-            <input type="submit" value="Actualizar Cambios" class="btn-principal btn-naranja">
-            <a href="distrito.php" class="btn-eliminar btn-cancelar">Cancelar</a>
+            <input type="submit" value="Actualizar Cambios" class="btn-principal" style="background-color:#f39c12;">
+            <a href="distrito.php" class="btn-eliminar" style="padding:12px 30px;font-size:16px;margin-left:10px;display:inline-block;">Cancelar</a>
         </form>
     </center>
 </div>
