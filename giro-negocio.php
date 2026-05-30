@@ -19,8 +19,10 @@
 <?php endif; ?>
 
 <div class="tabla-container">
-    <a class="btn-insertar" href="nuevo-giro.php">Insertar Nuevo Giro</a>
-    <br>
+    
+   <a class="btn-insertar" href="nuevo-giro.php">Insertar Nuevo Giro</a> 
+   
+    
     <table>
         <thead>
             <tr>
