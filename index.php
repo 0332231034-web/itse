@@ -1,4 +1,5 @@
 <?php
+include("sesion.php");
 include("cabecera.php");
 include("conexion.php");
 ?>
@@ -9,6 +10,69 @@ include("conexion.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Certificado</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .dos-columnas {
+            display: flex;
+            gap: 30px;
+            width: 90%;
+            margin: 20px auto 0 auto;
+            align-items: flex-start;
+        }
+        .dos-columnas fieldset {
+            flex: 1;
+            border: 2px solid #2471a3;
+            border-radius: 8px;
+            padding: 20px 25px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+        legend {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #2471a3;
+            padding: 6px 16px;
+            border-radius: 5px;
+        }
+        .fila-campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+        .fila-campo label {
+            width: 160px;
+            min-width: 160px;
+            font-weight: bold;
+            color: #555;
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .fila-campo input,
+        .fila-campo select {
+            flex: 1;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            background-color: #f9fbfd;
+        }
+        .fila-campo input:focus,
+        .fila-campo select:focus {
+            outline: none;
+            border-color: #2471a3;
+            background-color: #fff;
+        }
+        .centro-boton {
+            text-align: center;
+            margin: 25px 0 40px 0;
+        }
+    </style>
 </head>
 
 <body background="img/fondo.png">
@@ -17,6 +81,7 @@ include("conexion.php");
 <form action="i-certificado.php" method="post">
     <div class="dos-columnas">
 
+        <!-- FIELDSET IZQUIERDA: Datos de la Empresa -->
         <fieldset>
             <legend>Información de la Empresa</legend>
 
@@ -85,6 +150,7 @@ include("conexion.php");
             </div>
         </fieldset>
 
+        <!-- FIELDSET DERECHA: Datos del Certificado -->
         <fieldset>
             <legend>Datos del Certificado</legend>
 

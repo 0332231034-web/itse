@@ -1,3 +1,4 @@
+<?php include 'sesion.php'; ?>
 <?php include 'conexion.php'; ?>
 <?php include 'cabecera.php'; ?>
 <!DOCTYPE html>
